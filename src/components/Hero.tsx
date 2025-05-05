@@ -1,13 +1,17 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg')",
+          backgroundImage:
+            "url('https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg')",
         }}
       >
         <div className="absolute inset-0 bg-blue-900/80"></div>
@@ -15,10 +19,10 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-loose font-anton">
           Africa Stablecoin Network
         </h1>
-        <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
+        <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8 font-['Source_Sans_3',sans-serif]">
           Join the pioneers shaping the future of digital finance in Africa
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
