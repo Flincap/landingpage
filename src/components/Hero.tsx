@@ -4,18 +4,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center bg-[url('/hero-bg.jpg')] bg-cover bg-center py-20"
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-blue-900/80"></div>
-      </div>
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
 
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center">
@@ -27,7 +18,7 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="#join"
+            href="https://forms.gle/H6tDNApgEATnotiM8"
             className="bg-white hover:bg-neutral-100 text-blue-900 px-8 py-3 rounded-full text-lg font-medium transition-colors"
           >
             Join Now
