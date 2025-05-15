@@ -43,9 +43,7 @@ const ConferenceSection = () => {
                 <h3 className="text-white text-3xl font-bold mb-4">
                   November 7, 2025
                 </h3>
-                <p className="text-blue-100 text-xl mb-6">
-                  Four Points by Sheraton
-                </p>
+                <p className="text-blue-100 text-xl mb-6">Oriental Hotel</p>
                 <p className="text-blue-100 mb-8">
                   Victoria Island, Lagos, Nigeria
                 </p>
