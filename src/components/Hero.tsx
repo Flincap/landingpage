@@ -1,11 +1,50 @@
 import { ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
+import { motion } from "motion/react";
 
 const Hero = () => {
+  const backgroundImages = [
+    "/hero-bg.jpg",
+    "/hero-bg-1.JPEG",
+    "/hero-bg-3.JPG",
+    "/hero-bg-4.JPEG",
+    "/hero-bg-5.JPEG",
+  ];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((currentIndex) => {
+        const nextIndex = currentIndex + 1;
+        if (nextIndex >= backgroundImages.length) {
+          return 0;
+        } else {
+          return nextIndex;
+        }
+      });
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-[url('/hero-bg.jpg')] bg-cover bg-center py-20"
+      className="relative min-h-screen flex items-center py-20"
     >
+      <div className="absolute inset-0">
+        {backgroundImages.map((image, index) => (
+          <motion.div
+            key={index}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${image})` }}
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: index === currentImageIndex ? 1 : 0,
+            }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+          />
+        ))}
+      </div>
       <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
 
       {/* Content */}
