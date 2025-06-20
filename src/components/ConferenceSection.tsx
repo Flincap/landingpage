@@ -31,7 +31,7 @@ const ConferenceSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <SectionTitle
-          title="Africa Stablecoin Conference 2025"
+          title="Nigeria Stablecoin Summit"
           subtitle="Join Us In Lagos"
         />
 
@@ -41,14 +41,13 @@ const ConferenceSection = () => {
             <div className="md:w-2/5 bg-blue-900 p-8 flex items-center justify-center">
               <div className="text-center">
                 <h3 className="text-white text-3xl font-bold mb-4">
-                  November 7, 2025
+                  July 24, 2025
                 </h3>
-                <p className="text-blue-100 text-xl mb-6">Oriental Hotel</p>
-                <p className="text-blue-100 mb-8">
-                  Victoria Island, Lagos, Nigeria
-                </p>
+
+                <p className="text-blue-100 mb-2">Lagos Oriental Hotel, VI</p>
+                <p className="text-blue-100 mb-8">8:00am</p>
                 <a
-                  href="https://tix.africa/afristablecoin/"
+                  href="https://tix.africa/discover/ngstablecoin/checkout?step=tickets"
                   className="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-6 py-3 rounded-full text-lg font-bold transition-colors"
                 >
                   Register Now
@@ -67,7 +66,7 @@ const ConferenceSection = () => {
                   <Calendar className="text-green-600 h-6 w-6 mt-1 flex-shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Date & Time</h4>
-                    <p className="text-neutral-700">November 7, 2025</p>
+                    <p className="text-neutral-700">July 24, 2025</p>
                     <p className="text-neutral-700">8:00am WAT</p>
                   </div>
                 </div>
@@ -87,7 +86,7 @@ const ConferenceSection = () => {
                     <h4 className="font-semibold text-blue-900">Attendees</h4>
                     <p className="text-neutral-700">
                       Industry leaders, regulators, innovators, and stakeholders
-                      from across Africa
+                      from across Nigeria
                     </p>
                   </div>
                 </div>
@@ -143,13 +142,13 @@ const ConferenceSection = () => {
 
         <div className="mt-12 text-center">
           <p className="text-neutral-700 max-w-3xl mx-auto mb-8">
-            The Africa Stablecoin Conference is the premier gathering for
-            stablecoin enthusiasts, issuers, users, and regulators across the
-            continent. Don't miss this opportunity to be part of shaping the
-            future of digital finance in Africa.
+            The Nigeria Stablecoin Summit is the premier gathering for
+            Stablecoin enthusiasts, issuers, users and regulators in Nigeria.
+            Don’t miss this opportunity to be a part of shaping the future of
+            digital finance in Nigeria and Africa at large.
           </p>
           <a
-            href="https://tix.africa/afristablecoin/"
+            href="https://tix.africa/discover/ngstablecoin/checkout?step=tickets"
             className="inline-block bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors"
           >
             Secure Your Spot
