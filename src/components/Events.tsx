@@ -10,14 +10,14 @@ const events = [
     link: "https://summit.afristablecoin.org",
   },
   {
-    title: "Stablecoin and Payments Expo, Abuja - September 2025",
+    title: "Lagos Stablecoin Leadership Breakfast",
     description:
-      "The Stablecoin & Payments Expo is a premier gathering of innovators, regulators, and industry leaders exploring the future of digital money, cross-border payments, and financial inclusion through stablecoins and emerging payment technologies.",
-    image: "/spe.PNG", // Placeholder image
-    link: "https://expo.afristablecoin.org",
+      "The Lagos Stablecoin Leadership Breakfast is a high-level convening designed for thought leaders, pioneers, and policy shapers in Nigeria's stablecoin and payments ecosystem. Hosted by the Africa Stablecoin Network (ASN), this event offers a unique platform to explore the future of borderless payments, foster impactful connections, and ignite strategic conversations around regulatory frameworks, innovation, and adoption.",
+    image: "/lslb.jpeg", // Placeholder image
+    link: "https://lagos.afristablecoin.org/",
   },
   {
-    title: "West Africa Stablecoin Summit, Accra - November 2025",
+    title: "West Africa Stablecoin Summit, Abuja - November 2025",
     description:
       "The West Africa Stablecoin Summit is a high-impact convening of policymakers, fintech leaders, blockchain innovators, and investors focused on unlocking the potential of stablecoins to drive cross-border trade, financial inclusion, and economic growth across West Africa.",
     image: "/wass.PNG", // Placeholder image
