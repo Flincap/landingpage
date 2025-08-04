@@ -31,7 +31,7 @@ const ConferenceSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <SectionTitle
-          title="Nigeria Stablecoin Summit"
+          title="Lagos Stablecoin Leadership Breakfast"
           subtitle="Join Us In Lagos"
         />
 
@@ -41,10 +41,12 @@ const ConferenceSection = () => {
             <div className="md:w-2/5 bg-blue-900 p-8 flex items-center justify-center">
               <div className="text-center">
                 <h3 className="text-white text-3xl font-bold mb-4">
-                  July 24, 2025
+                  October 6, 2025
                 </h3>
 
-                <p className="text-blue-100 mb-2">Lagos Oriental Hotel, VI</p>
+                <p className="text-blue-100 mb-2">
+                  Four Points by Sheraton, VI
+                </p>
                 <p className="text-blue-100 mb-8">8:00am</p>
                 <a
                   href="https://tix.africa/discover/ngstablecoin/checkout?step=tickets"
@@ -66,7 +68,7 @@ const ConferenceSection = () => {
                   <Calendar className="text-green-600 h-6 w-6 mt-1 flex-shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Date & Time</h4>
-                    <p className="text-neutral-700">July 24, 2025</p>
+                    <p className="text-neutral-700">October 6, 2025</p>
                     <p className="text-neutral-700">8:00am WAT</p>
                   </div>
                 </div>
@@ -75,8 +77,8 @@ const ConferenceSection = () => {
                   <MapPin className="text-green-600 h-6 w-6 mt-1 flex-shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Venue</h4>
-                    <p className="text-neutral-700">Oriental Hotel</p>
-                    <p className="text-neutral-700">Victoria Island, Lagos</p>
+                    <p className="text-neutral-700">Four Points by Sheraton</p>
+                    <p className="text-neutral-700">Lagos, VI</p>
                   </div>
                 </div>
 
