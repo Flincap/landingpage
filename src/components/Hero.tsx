@@ -4,11 +4,12 @@ import { motion } from "motion/react";
 
 const Hero = () => {
   const backgroundImages = [
-    "/hero-bg.jpg",
-    "/hero-bg-1.JPEG",
-    "/hero-bg-3.JPG",
-    "/hero-bg-4.JPEG",
-    "/hero-bg-5.JPEG",
+    "/hero1.jpg",
+    "/hero2.jpg",
+    "/hero3.jpg",
+    "/hero4.JPG",
+    "/hero5.JPG",
+    "/hero6.jpg",
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
