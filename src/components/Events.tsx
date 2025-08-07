@@ -116,7 +116,7 @@ const Events: React.FC = () => {
                           key={i}
                           src={img}
                           alt={`Gallery ${i + 1}`}
-                          className="w-full h-64 object-cover rounded-lg shadow"
+                          className="w-full h-64 object-cover rounded-lg shadow-sm"
                         />
                       ))}
                     </div>
