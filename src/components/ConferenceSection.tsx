@@ -65,7 +65,7 @@ const ConferenceSection = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex items-start">
-                  <Calendar className="text-green-600 h-6 w-6 mt-1 flex-shrink-0" />
+                  <Calendar className="text-green-600 h-6 w-6 mt-1 shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Date & Time</h4>
                     <p className="text-neutral-700">October 6, 2025</p>
@@ -74,7 +74,7 @@ const ConferenceSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <MapPin className="text-green-600 h-6 w-6 mt-1 flex-shrink-0" />
+                  <MapPin className="text-green-600 h-6 w-6 mt-1 shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Venue</h4>
                     <p className="text-neutral-700">Four Points by Sheraton</p>
@@ -83,7 +83,7 @@ const ConferenceSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <Users className="text-green-600 h-6 w-6 mt-1 flex-shrink-0" />
+                  <Users className="text-green-600 h-6 w-6 mt-1 shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Attendees</h4>
                     <p className="text-neutral-700">
@@ -94,7 +94,7 @@ const ConferenceSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <Clock className="text-green-600 h-6 w-6 mt-1 flex-shrink-0" />
+                  <Clock className="text-green-600 h-6 w-6 mt-1 shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Format</h4>
                     <p className="text-neutral-700">
