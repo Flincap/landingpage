@@ -48,10 +48,20 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             Events
           </Link>
           <a
+            href="https://drive.google.com/drive/folders/16mrdO5-lheId1-mZ_m3sY4QoVHuT8pXa"
+            className={`${
+              isScrolled
+                ? "text-blue-900 hover:text-green-600"
+                : "text-white hover:bg-white/10 hover:text-white"
+            } text-sm font-medium transition-colors px-4 py-2 rounded-full`}
+          >
+            Become a member
+          </a>
+          <a
             href="https://forms.gle/H6tDNApgEATnotiM8"
             className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
           >
-            Join Now
+            Gallery
           </a>
         </nav>
 

@@ -61,7 +61,7 @@ const Hero = () => {
             href="https://forms.gle/H6tDNApgEATnotiM8"
             className="bg-white hover:bg-neutral-100 text-blue-900 px-8 py-3 rounded-full text-lg font-medium transition-colors"
           >
-            Join Now
+            Become a member
           </a>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import MediaPartnersCarousel from "./components/MediaPartnersCarousel";
 import AboutSection from "./components/AboutSection";
 import WhyJoinSection from "./components/WhyJoinSection";
 import MemberCategories from "./components/MemberCategories";
@@ -33,6 +34,7 @@ function App() {
               element={
                 <>
                   <Hero />
+                  <MediaPartnersCarousel />
                   <AboutSection />
                   <WhyJoinSection />
                   <MemberCategories />
