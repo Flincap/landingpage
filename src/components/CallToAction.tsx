@@ -4,7 +4,7 @@ const CallToAction = () => {
   return (
     <section
       id="join"
-      className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-green-900 text-white"
+      className="py-20 bg-linear-to-br from-blue-900 via-blue-800 to-green-900 text-white"
     >
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

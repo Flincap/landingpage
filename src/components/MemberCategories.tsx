@@ -61,7 +61,7 @@ const MemberCategories = () => {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-blue-800/50 backdrop-blur-sm rounded-xl p-6 border border-blue-700/50 hover:transform hover:scale-[1.03] transition-all duration-300"
+              className="bg-blue-800/50 backdrop-blur-xs rounded-xl p-6 border border-blue-700/50 hover:transform hover:scale-[1.03] transition-all duration-300"
             >
               <div className="text-green-400 mb-4">{category.icon}</div>
               <h3 className="text-xl font-semibold mb-2 text-white">

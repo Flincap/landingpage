@@ -10,7 +10,7 @@ const AboutSection = () => {
         />
         
         <div className="grid md:grid-cols-2 gap-12 mt-12">
-          <div className="bg-blue-50 p-8 rounded-2xl shadow-sm border border-blue-100 transform transition-transform hover:scale-[1.02]">
+          <div className="bg-blue-50 p-8 rounded-2xl shadow-xs border border-blue-100 transform transition-transform hover:scale-[1.02]">
             <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center">
               <span className="text-blue-600 mr-3 text-3xl">☆</span>
               Our Vision
@@ -20,7 +20,7 @@ const AboutSection = () => {
             </p>
           </div>
           
-          <div className="bg-green-50 p-8 rounded-2xl shadow-sm border border-green-100 transform transition-transform hover:scale-[1.02]">
+          <div className="bg-green-50 p-8 rounded-2xl shadow-xs border border-green-100 transform transition-transform hover:scale-[1.02]">
             <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center">
               <span className="text-green-600 mr-3 text-3xl">↗</span>
               Our Mission

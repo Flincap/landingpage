@@ -48,9 +48,9 @@ const WhyJoinSection = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg p-6 shadow-sm border border-neutral-100 flex hover:shadow-md transition-shadow"
+                className="bg-white rounded-lg p-6 shadow-xs border border-neutral-100 flex hover:shadow-md transition-shadow"
               >
-                <CheckCircle2 className="text-green-600 h-6 w-6 mt-1 flex-shrink-0" />
+                <CheckCircle2 className="text-green-600 h-6 w-6 mt-1 shrink-0" />
                 <div className="ml-4">
                   <h3 className="text-xl font-semibold text-blue-900 mb-2">
                     {benefit.title}
