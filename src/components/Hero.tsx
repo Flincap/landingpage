@@ -7,7 +7,6 @@ const Hero = () => {
     "/hero1.jpg",
     "/hero2.jpg",
     "/hero3.jpg",
-    "/hero4.JPG",
     "/hero5.JPG",
     "/hero6.jpg",
   ];
@@ -30,7 +29,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center py-20"
+      className="relative min-h-screen flex items-center py-20 pt-28"
     >
       <div className="absolute inset-0">
         {backgroundImages.map((image, index) => (
@@ -61,7 +60,7 @@ const Hero = () => {
             href="https://forms.gle/H6tDNApgEATnotiM8"
             className="bg-white hover:bg-neutral-100 text-blue-900 px-8 py-3 rounded-full text-lg font-medium transition-colors"
           >
-            Join Now
+            Become a member
           </a>
         </div>
       </div>
