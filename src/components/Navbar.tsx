@@ -3,11 +3,7 @@ import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
 
-interface NavbarProps {
-  isScrolled: boolean;
-}
-
-const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
+const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -25,35 +21,47 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="z-50">
-          <Logo className={isScrolled ? "h-10" : "h-12"} />
+          <Logo className="h-10" />
         </div>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-6">
           <Link
             to="/events"
-            className={`${
-              isScrolled
-                ? "text-blue-900 hover:text-green-600"
-                : "text-white hover:bg-white/10 hover:text-white"
-            } text-sm font-medium transition-colors px-4 py-2 rounded-full`}
+            className="text-blue-900 hover:text-green-600 text-sm font-medium transition-colors px-4 py-2 rounded-full"
           >
             Events
           </Link>
           <a
+            href="/#about"
+            className="text-blue-900 hover:text-green-600 text-sm font-medium transition-colors px-4 py-2 rounded-full"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("about")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            About Us
+          </a>
+          <a
+            href="/#contact"
+            className="text-blue-900 hover:text-green-600 text-sm font-medium transition-colors px-4 py-2 rounded-full"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Contact
+          </a>
+          <a
             href="https://drive.google.com/drive/folders/16mrdO5-lheId1-mZ_m3sY4QoVHuT8pXa"
-            className={`${
-              isScrolled
-                ? "text-blue-900 hover:text-green-600"
-                : "text-white hover:bg-white/10 hover:text-white"
-            } text-sm font-medium transition-colors px-4 py-2 rounded-full`}
+            className="text-blue-900 hover:text-green-600 text-sm font-medium transition-colors px-4 py-2 rounded-full"
           >
             Become a member
           </a>
@@ -72,17 +80,9 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
-            <X
-              className={`h-6 w-6 ${
-                isScrolled || isMenuOpen ? "text-neutral-800" : "text-white"
-              }`}
-            />
+            <X className="h-6 w-6 text-neutral-800" />
           ) : (
-            <Menu
-              className={`h-6 w-6 ${
-                isScrolled ? "text-neutral-800" : "text-white"
-              }`}
-            />
+            <Menu className="h-6 w-6 text-neutral-800" />
           )}
         </button>
 
@@ -102,11 +102,37 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
                 Events
               </Link>
               <a
+                href="/#about"
+                className="text-blue-900 hover:text-green-600 text-lg font-medium transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("about")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                  setIsMenuOpen(false);
+                }}
+              >
+                About Us
+              </a>
+              <a
+                href="/#contact"
+                className="text-blue-900 hover:text-green-600 text-lg font-medium transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                  setIsMenuOpen(false);
+                }}
+              >
+                Contact
+              </a>
+              <a
                 href="https://forms.gle/H6tDNApgEATnotiM8"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Join Now
+                Gallery
               </a>
             </nav>
           </div>

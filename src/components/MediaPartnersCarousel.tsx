@@ -1,52 +1,58 @@
-import React from "react";
+"use client";
+
+import * as React from "react";
+// import Autoplay from "embla-carousel-autoplay";
+
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import AutoScroll from "embla-carousel-auto-scroll";
 
 const partners = [
-  "Coin Telegraph",
-  "The Cable",
-  "Xinhua",
-  "Punch",
-  "Nairametrics",
-  "cryptopolitan",
-  "msn",
-  "technext24",
-  "bitcoinke",
-  "cryptoninjas",
-  "atlantic digest",
-  "beincrypto",
-  "news express",
+  { name: "Coin Telegraph", logo: "/src/assets/cointelegraph-logo.svg" },
+  { name: "The Cable", logo: "/src/assets/thecable.png" },
+  { name: "Xinhua", logo: "/src/assets/xinhua.png" },
+  { name: "Punch", logo: "/src/assets/punch.png" },
+  { name: "Nairametrics", logo: "/src/assets/nairametrics-logo.svg" },
+  { name: "cryptopolitan", logo: "/src/assets/cryptopolitan.png" },
+  { name: "msn", logo: "/src/assets/msn.png" },
+  { name: "technext24", logo: "/src/assets/technext24.png" },
+  { name: "bitcoinke", logo: "/src/assets/bitcoinke.png" },
+  { name: "cryptoninjas", logo: "/src/assets/cryptoninjas.png" },
+  { name: "atlantic digest", logo: "/src/assets/atlanticdigest.png" },
+  { name: "beincrypto", logo: "/src/assets/beincrypto.png" },
+  { name: "news express", logo: "/src/assets/newsexpress.png" },
 ];
 
-const MediaPartnersCarousel: React.FC = () => {
-  return (
-    <div className="w-full bg-white py-6 border-b border-neutral-100">
-      <div className="container mx-auto px-4">
-        <h3 className="text-center text-lg font-semibold text-blue-900 mb-4">
-          Media Partners
-        </h3>
-        <div className="overflow-x-auto">
-          <div className="flex space-x-8 animate-scroll whitespace-nowrap">
-            {partners.map((partner, idx) => (
-              <div
-                key={idx}
-                className="inline-block bg-neutral-100 rounded-lg px-6 py-3 text-blue-900 font-bold text-base shadow-sm border border-neutral-200 min-w-[160px] text-center mx-2"
-              >
-                {partner}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <style>{`
-        @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-      `}</style>
-    </div>
-  );
-};
+export default function CarouselPlugin() {
+  const plugin = React.useRef(AutoScroll());
 
-export default MediaPartnersCarousel;
+  return (
+    <Carousel
+      plugins={[plugin.current]}
+      className="w-full px-4"
+      onMouseLeave={plugin.current.reset}
+    >
+      <CarouselContent className="-ml-8">
+        {partners.map((partner, index) => (
+          <CarouselItem key={index} className="bg-blue-200 mx-2 max-w-sm">
+            <div className="p-1">
+              <Card className="bg-red-200">
+                <CardContent className="flex items-center justify-center p-6">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="max-h-16 max-w-[120px] object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
+  );
+}

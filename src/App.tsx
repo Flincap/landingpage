@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import MediaPartnersCarousel from "./components/MediaPartnersCarousel";
+// import MediaPartnersCarousel from "./components/MediaPartnersCarousel";
 import AboutSection from "./components/AboutSection";
 import WhyJoinSection from "./components/WhyJoinSection";
 import MemberCategories from "./components/MemberCategories";
@@ -13,20 +12,10 @@ import Footer from "./components/Footer";
 import Events from "./components/Events";
 
 function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <Router>
       <div className="min-h-screen bg-neutral-50 font-sans text-neutral-900">
-        <Navbar isScrolled={isScrolled} />
+        <Navbar />
         <main>
           <Routes>
             <Route
@@ -34,7 +23,7 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <MediaPartnersCarousel />
+                  {/* <MediaPartnersCarousel /> */}
                   <AboutSection />
                   <WhyJoinSection />
                   <MemberCategories />
