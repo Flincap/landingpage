@@ -24,11 +24,19 @@ const Navbar: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="z-50">
-          <Logo className="h-10" />
+          <Link to="/">
+            <Logo className="h-10" />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-6">
+          <Link
+            to="/"
+            className="text-blue-900 hover:text-green-600 text-sm font-medium transition-colors px-4 py-2 rounded-full"
+          >
+            Home
+          </Link>
           <Link
             to="/events"
             className="text-blue-900 hover:text-green-600 text-sm font-medium transition-colors px-4 py-2 rounded-full"
@@ -94,6 +102,13 @@ const Navbar: React.FC = () => {
         >
           <div className="flex flex-col h-full justify-center items-center">
             <nav className="flex flex-col space-y-8 text-center">
+              <Link
+                to="/"
+                className="text-blue-900 hover:text-green-600 text-lg font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
               <Link
                 to="/events"
                 className="text-blue-900 hover:text-green-600 text-lg font-medium transition-colors"
