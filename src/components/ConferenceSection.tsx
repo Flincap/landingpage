@@ -49,7 +49,9 @@ const ConferenceSection = () => {
                 </p>
                 <p className="text-blue-100 mb-8">8:00am</p>
                 <a
-                  href="https://tix.africa/discover/ngstablecoin/checkout?step=tickets"
+                  href="https://tix.africa/afristablecoin"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-6 py-3 rounded-full text-lg font-bold transition-colors"
                 >
                   Register Now
