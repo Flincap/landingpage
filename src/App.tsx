@@ -10,8 +10,13 @@ import ConferenceSection from "./components/ConferenceSection";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
 import Events from "./components/Events";
+import { useState } from "react";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import PrivacyPopup from "./components/PrivacyPopup";
 
 function App() {
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+
   return (
     <Router>
       <div className="min-h-screen bg-neutral-50 font-sans text-neutral-900">
@@ -36,7 +41,11 @@ function App() {
             <Route path="/events" element={<Events />} />
           </Routes>
         </main>
+        {showPrivacyPolicy && (
+          <PrivacyPolicy onClose={() => setShowPrivacyPolicy(false)} />
+        )}
         <Footer />
+        <PrivacyPopup onShowPrivacy={() => setShowPrivacyPolicy(true)} />
       </div>
     </Router>
   );
