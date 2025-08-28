@@ -31,8 +31,8 @@ const ConferenceSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <SectionTitle
-          title="Lagos Stablecoin Leadership Breakfast"
-          subtitle="Join Us In Lagos"
+          title="West Africa Stablecoin Summit"
+          subtitle="Join Us In Abuja"
         />
 
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden mt-12 border border-neutral-100">
@@ -41,12 +41,10 @@ const ConferenceSection = () => {
             <div className="md:w-2/5 bg-blue-900 p-8 flex items-center justify-center">
               <div className="text-center">
                 <h3 className="text-white text-3xl font-bold mb-4">
-                  October 6, 2025
+                  November 19-20, 2025
                 </h3>
 
-                <p className="text-blue-100 mb-2">
-                  Four Points by Sheraton, VI
-                </p>
+                <p className="text-blue-100 mb-2">Abuja, Nigeria</p>
                 <p className="text-blue-100 mb-8">8:00am</p>
                 <a
                   href="https://tix.africa/afristablecoin"
@@ -70,7 +68,7 @@ const ConferenceSection = () => {
                   <Calendar className="text-green-600 h-6 w-6 mt-1 shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Date & Time</h4>
-                    <p className="text-neutral-700">October 6, 2025</p>
+                    <p className="text-neutral-700">November 19-20, 2025</p>
                     <p className="text-neutral-700">8:00am WAT</p>
                   </div>
                 </div>
@@ -79,8 +77,8 @@ const ConferenceSection = () => {
                   <MapPin className="text-green-600 h-6 w-6 mt-1 shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Venue</h4>
-                    <p className="text-neutral-700">Four Points by Sheraton</p>
-                    <p className="text-neutral-700">Lagos, VI</p>
+                    {/* <p className="text-neutral-700">Four Points by Sheraton</p> */}
+                    <p className="text-neutral-700">Abuja, Nigeria</p>
                   </div>
                 </div>
 
