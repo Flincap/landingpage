@@ -47,7 +47,7 @@ const ConferenceSection = () => {
                 <p className="text-blue-100 mb-2">Abuja, Nigeria</p>
                 <p className="text-blue-100 mb-8">8:00am</p>
                 <a
-                  href="https://tix.africa/afristablecoin"
+                  href="https://tix.africa/west-africa-stablecoin-summit"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-6 py-3 rounded-full text-lg font-bold transition-colors"
@@ -144,13 +144,13 @@ const ConferenceSection = () => {
 
         <div className="mt-12 text-center">
           <p className="text-neutral-700 max-w-3xl mx-auto mb-8">
-            The Nigeria Stablecoin Summit is the premier gathering for
+            The West Africa Stablecoin Summit is the premier gathering for
             Stablecoin enthusiasts, issuers, users and regulators in Nigeria.
             Don’t miss this opportunity to be a part of shaping the future of
             digital finance in Nigeria and Africa at large.
           </p>
           <a
-            href="https://tix.africa/afristablecoin"
+            href="https://tix.africa/west-africa-stablecoin-summit"
             className="inline-block bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors"
           >
             Secure Your Spot

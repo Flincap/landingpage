@@ -1,10 +1,4 @@
-import {
-  ArrowUpRight,
-  Coins,
-  CreditCard,
-  DollarSign,
-  Percent,
-} from "lucide-react";
+import { ArrowUpRight, Coins, CreditCard, DollarSign } from "lucide-react";
 import SectionTitle from "./SectionTitle";
 
 const WhyStablecoinsSection = () => {
@@ -130,7 +124,7 @@ const WhyStablecoinsSection = () => {
 
         <div className="mt-16 text-center">
           <a
-            href="https://lagos.afristablecoin.org/"
+            href="https://wass.afristablecoin.org/"
             className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors"
           >
             Learn More at Our Conference
