@@ -41,7 +41,7 @@ const ConferenceSection = () => {
             <div className="md:w-2/5 bg-blue-900 p-8 flex items-center justify-center">
               <div className="text-center">
                 <h3 className="text-white text-3xl font-bold mb-4">
-                  November 19-20, 2025
+                  November 20, 2025
                 </h3>
 
                 <p className="text-blue-100 mb-2">Abuja, Nigeria</p>
@@ -68,7 +68,7 @@ const ConferenceSection = () => {
                   <Calendar className="text-green-600 h-6 w-6 mt-1 shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Date & Time</h4>
-                    <p className="text-neutral-700">November 19-20, 2025</p>
+                    <p className="text-neutral-700">November 20, 2025</p>
                     <p className="text-neutral-700">8:00am WAT</p>
                   </div>
                 </div>
