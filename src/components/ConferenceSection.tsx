@@ -41,13 +41,13 @@ const ConferenceSection = () => {
             <div className="md:w-2/5 bg-blue-900 p-8 flex items-center justify-center">
               <div className="text-center">
                 <h3 className="text-white text-3xl font-bold mb-4">
-                  November 20, 2025
+                  July 30, 2026
                 </h3>
 
-                <p className="text-blue-100 mb-2">Abuja, Nigeria</p>
+                <p className="text-blue-100 mb-2">Lagos, Nigeria</p>
                 <p className="text-blue-100 mb-8">8:00am</p>
                 <a
-                  href="https://tix.africa/west-africa-stablecoin-summit"
+                  href="https://tix.africa/discover/nss2026"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-6 py-3 rounded-full text-lg font-bold transition-colors"
@@ -68,7 +68,7 @@ const ConferenceSection = () => {
                   <Calendar className="text-green-600 h-6 w-6 mt-1 shrink-0" />
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Date & Time</h4>
-                    <p className="text-neutral-700">November 20, 2025</p>
+                    <p className="text-neutral-700">July 30, 2026</p>
                     <p className="text-neutral-700">8:00am WAT</p>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ const ConferenceSection = () => {
                   <div className="ml-4">
                     <h4 className="font-semibold text-blue-900">Venue</h4>
                     {/* <p className="text-neutral-700">Four Points by Sheraton</p> */}
-                    <p className="text-neutral-700">Abuja, Nigeria</p>
+                    <p className="text-neutral-700">Lagos, Nigeria</p>
                   </div>
                 </div>
 
