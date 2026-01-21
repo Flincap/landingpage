@@ -3,18 +3,12 @@ import { ArrowUpRight } from "lucide-react";
 
 const upcomingEvents = [
   {
-    title: "Lagos Stablecoin Leadership Breakfast",
+    title: "Nigeria Stablecoin Summit 2.0, Lagos - July 2026",
     description:
-      "The Lagos Stablecoin Leadership Breakfast is a high-level convening designed for thought leaders, pioneers, and policy shapers in Nigeria's stablecoin and payments ecosystem. Hosted by the Africa Stablecoin Network (ASN), this event offers a unique platform to explore the future of borderless payments, foster impactful connections, and ignite strategic conversations around regulatory frameworks, innovation, and adoption.",
-    image: "/lslb.jpeg",
-    link: "https://lagos.afristablecoin.org/",
-  },
-  {
-    title: "West Africa Stablecoin Summit, Abuja - November 2025",
-    description:
-      "The West Africa Stablecoin Summit is a high-impact convening of policymakers, fintech leaders, blockchain innovators, and investors focused on unlocking the potential of stablecoins to drive cross-border trade, financial inclusion, and economic growth across West Africa.",
-    image: "/wass.PNG",
-    link: "https://wass.afristablecoin.org",
+      "Nigeria is at the forefront of the innovation of payments and banking with stablecoins. Stablecoins are reshaping the way money moves, stabilizing financial flows, and unlocking new opportunities for millions across Nigeria and beyond. NSS 2.0 brings together the builders, regulators, and visionaries who are driving this movement forward, sparking conversations that will define the future of finance.",
+    image: "/nss.PNG",
+    link: "https://www.nigeriastablecoinsummit.com/",
+    gallery: [],
   },
 ];
 
@@ -34,6 +28,20 @@ const pastEvents = [
       "/nss-gall7.JPG",
       "/nss-gall8.JPG",
     ],
+  },
+  {
+    title: "Lagos Stablecoin Leadership Breakfast",
+    description:
+      "The Lagos Stablecoin Leadership Breakfast is a high-level convening designed for thought leaders, pioneers, and policy shapers in Nigeria's stablecoin and payments ecosystem. Hosted by the Africa Stablecoin Network (ASN), this event offers a unique platform to explore the future of borderless payments, foster impactful connections, and ignite strategic conversations around regulatory frameworks, innovation, and adoption.",
+    image: "/lslb.jpeg",
+    link: "https://lagos.afristablecoin.org/",
+  },
+  {
+    title: "West Africa Stablecoin Summit, Abuja - November 2025",
+    description:
+      "The West Africa Stablecoin Summit is a high-impact convening of policymakers, fintech leaders, blockchain innovators, and investors focused on unlocking the potential of stablecoins to drive cross-border trade, financial inclusion, and economic growth across West Africa.",
+    image: "/wass.PNG",
+    link: "https://wass.afristablecoin.org",
   },
 ];
 
@@ -111,7 +119,7 @@ const Events: React.FC = () => {
                       Photo Gallery
                     </h5>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      {event.gallery.map((img, i) => (
+                      {event?.gallery?.map((img, i) => (
                         <img
                           key={i}
                           src={img}
