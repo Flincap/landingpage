@@ -31,7 +31,7 @@ const ConferenceSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <SectionTitle
-          title="West Africa Stablecoin Summit"
+          title="Nigeria Stablecoin Summit"
           subtitle="Join Us In Abuja"
         />
 
@@ -144,7 +144,7 @@ const ConferenceSection = () => {
 
         <div className="mt-12 text-center">
           <p className="text-neutral-700 max-w-3xl mx-auto mb-8">
-            The West Africa Stablecoin Summit is the premier gathering for
+            The Nigeria Stablecoin Summit is the premier gathering for
             Stablecoin enthusiasts, issuers, users and regulators in Nigeria.
             Don’t miss this opportunity to be a part of shaping the future of
             digital finance in Nigeria and Africa at large.
