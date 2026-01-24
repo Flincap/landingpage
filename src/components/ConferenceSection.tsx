@@ -32,7 +32,7 @@ const ConferenceSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <SectionTitle
           title="Nigeria Stablecoin Summit"
-          subtitle="Join Us In Abuja"
+          subtitle="Join Us In Lagos"
         />
 
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden mt-12 border border-neutral-100">

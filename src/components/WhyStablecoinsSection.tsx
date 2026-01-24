@@ -124,7 +124,7 @@ const WhyStablecoinsSection = () => {
 
         <div className="mt-16 text-center">
           <a
-            href="https://wass.afristablecoin.org/"
+            href="https://www.nigeriastablecoinsummit.com/"
             className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors"
           >
             Learn More at Our Conference
