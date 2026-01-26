@@ -150,7 +150,7 @@ const ConferenceSection = () => {
             digital finance in Nigeria and Africa at large.
           </p>
           <a
-            href="https://tix.africa/west-africa-stablecoin-summit"
+            href="https://tix.africa/discover/nss2026"
             className="inline-block bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors"
           >
             Secure Your Spot

@@ -16,21 +16,21 @@ const Hero = () => {
     {
       type: "event",
       image: "/hero2.jpg",
-      title: "Lagos Stablecoin Leadership Breakfast",
+      title: "Nigeria Stablecoin Summit 2.0",
       description:
         "A high-level convening for thought leaders, pioneers, and policy shapers in Nigeria's stablecoin ecosystem",
       buttonText: "Register Now",
-      buttonLink: "https://lagos.afristablecoin.org",
+      buttonLink: "https://www.nigeriastablecoinsummit.com/",
     },
-    {
-      type: "event",
-      image: "/hero3.jpg",
-      title: "West Africa Stablecoin Summit",
-      description:
-        "Join policymakers and fintech leaders to unlock the potential of stablecoins across West Africa",
-      buttonText: "Learn More",
-      buttonLink: "https://wass.afristablecoin.org",
-    },
+    // {
+    //   type: "event",
+    //   image: "/hero3.jpg",
+    //   title: "West Africa Stablecoin Summit",
+    //   description:
+    //     "Join policymakers and fintech leaders to unlock the potential of stablecoins across West Africa",
+    //   buttonText: "Learn More",
+    //   buttonLink: "https://wass.afristablecoin.org",
+    // },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
