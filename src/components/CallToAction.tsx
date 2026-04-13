@@ -8,18 +8,19 @@ const CallToAction = () => {
     >
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Join the Africa Stablecoin Network Today
+          Let's Build the Future of Finance in Africa Together
         </h2>
         <p className="text-blue-100 max-w-2xl mx-auto mb-8">
-          Be part of shaping the future of finance in Africa. Join our network
-          and gain access to unparalleled resources, connections, and insights.
+          Africa Stablecoin Network is a non-profit, non-membership organisation. Whether you're a regulator, founder, investor, researcher, or media partner — let's talk about how we can collaborate to advance stablecoin adoption across the continent.
         </p>
 
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdFoQScJuGho1k4Y1pMm-Wnqo58mcrIDoN3iqfmpSpfPjoKVg/viewform"
-          className="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-8 py-3 rounded-full text-lg font-medium transition-colors"
+          href="https://calendly.com/nigeriastablecoinsummit/nss"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-8 py-3 rounded-full text-lg font-medium transition-colors"
         >
-          Apply Now
+          Book a Call <ArrowRight className="h-5 w-5" />
         </a>
       </div>
     </section>

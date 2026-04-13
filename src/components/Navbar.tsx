@@ -37,12 +37,14 @@ const Navbar: React.FC = () => {
           >
             Home
           </Link>
-          <Link
-            to="/events"
+          <a
+            href="https://www.nigeriastablecoinsummit.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-blue-900 hover:text-green-600 text-sm font-medium transition-colors px-4 py-2 rounded-full"
           >
             Events
-          </Link>
+          </a>
           <a
             href="/#about"
             className="text-blue-900 hover:text-green-600 text-sm font-medium transition-colors px-4 py-2 rounded-full"
@@ -68,16 +70,24 @@ const Navbar: React.FC = () => {
             Contact
           </a>
           <a
-            href="https://forms.gle/H6tDNApgEATnotiM8"
+            href="#gallery"
             className="text-blue-900 hover:text-green-600 text-sm font-medium transition-colors px-4 py-2 rounded-full"
-          >
-            Become a member
-          </a>
-          <a
-            href="https://drive.google.com/drive/folders/16mrdO5-lheId1-mZ_m3sY4QoVHuT8pXa"
-            className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("gallery")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Gallery
+          </a>
+          <a
+            href="https://calendly.com/nigeriastablecoinsummit/nss"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
+          >
+            Book a Call
           </a>
         </nav>
 
@@ -109,13 +119,15 @@ const Navbar: React.FC = () => {
               >
                 Home
               </Link>
-              <Link
-                to="/events"
+              <a
+                href="https://www.nigeriastablecoinsummit.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-900 hover:text-green-600 text-lg font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Events
-              </Link>
+              </a>
               <a
                 href="/#about"
                 className="text-blue-900 hover:text-green-600 text-lg font-medium transition-colors"
@@ -143,11 +155,26 @@ const Navbar: React.FC = () => {
                 Contact
               </a>
               <a
-                href="https://forms.gle/H6tDNApgEATnotiM8"
+                href="#gallery"
+                className="text-blue-900 hover:text-green-600 text-lg font-medium transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("gallery")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                  setIsMenuOpen(false);
+                }}
+              >
+                Gallery
+              </a>
+              <a
+                href="https://calendly.com/nigeriastablecoinsummit/nss"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Gallery
+                Book a Call
               </a>
             </nav>
           </div>

@@ -1,15 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-// import MediaPartnersCarousel from "./components/MediaPartnersCarousel";
 import AboutSection from "./components/AboutSection";
 import WhyJoinSection from "./components/WhyJoinSection";
-import MemberCategories from "./components/MemberCategories";
 import WhyStablecoinsSection from "./components/WhyStablecoinsSection";
 import ConferenceSection from "./components/ConferenceSection";
+import Gallery from "./components/Gallery";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
-import Events from "./components/Events";
 import { useState } from "react";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import PrivacyPopup from "./components/PrivacyPopup";
@@ -28,17 +26,15 @@ function App() {
               element={
                 <>
                   <Hero />
-                  {/* <MediaPartnersCarousel /> */}
                   <AboutSection />
                   <WhyJoinSection />
-                  <MemberCategories />
                   <WhyStablecoinsSection />
                   <ConferenceSection />
+                  <Gallery />
                   <CallToAction />
                 </>
               }
             />
-            <Route path="/events" element={<Events />} />
           </Routes>
         </main>
         {showPrivacyPolicy && (

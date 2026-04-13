@@ -56,9 +56,9 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="text-green-500 h-5 w-5 mt-1 mr-3" />
-                <span className="text-blue-200">
-                  events (@) afristablecoin.org
-                </span>
+                <a href="mailto:hi@afristablecoin.org" className="text-blue-200 hover:text-white transition-colors">
+                  hi@afristablecoin.org
+                </a>
               </li>
               <li className="flex items-start">
                 <Phone className="text-green-500 h-5 w-5 mt-1 mr-3" />
