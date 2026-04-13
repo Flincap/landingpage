@@ -9,9 +9,9 @@ const Hero = () => {
       image: "/hero1.jpg",
       title: "Africa Stablecoin Network",
       description:
-        "Join the pioneers shaping the future of digital finance in Africa",
-      buttonText: "Become a member",
-      buttonLink: "https://forms.gle/H6tDNApgEATnotiM8",
+        "A non-profit, non-membership organisation advancing stablecoin adoption and policy across Africa",
+      buttonText: "Book a Call",
+      buttonLink: "https://calendly.com/nigeriastablecoinsummit/nss",
     },
     {
       type: "event",
