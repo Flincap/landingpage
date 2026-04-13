@@ -2,11 +2,9 @@ import { motion } from "motion/react";
 import SectionTitle from "./SectionTitle";
 
 // Drop your 30 photos into /public as asn-gall1.jpg ... asn-gall30.jpg
-// (any common extension works — just update the array below to match)
 const galleryImages = Array.from({ length: 30 }, (_, i) => `/asn-gall${i + 1}.jpg`);
 
 const Gallery = () => {
-  // Build 3 rows of 10 for the marquee-style collage like the screenshot
   const rows = [
     galleryImages.slice(0, 10),
     galleryImages.slice(10, 20),
@@ -27,7 +25,6 @@ const Gallery = () => {
         />
       </div>
 
-      {/* Photo collage rows */}
       <div className="space-y-4">
         {rows.map((row, rowIdx) => (
           <div
@@ -61,7 +58,6 @@ const Gallery = () => {
         ))}
       </div>
 
-      {/* YouTube recap */}
       <div className="container mx-auto px-4 mt-20">
         <div className="max-w-4xl mx-auto text-center mb-8">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
@@ -74,16 +70,13 @@ const Gallery = () => {
         <div className="max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/?listType=search&list=Nigeria+Stablecoin+Summit+recap"
+            src="https://www.youtube.com/embed/x8DxbBTnbgs"
             title="Nigeria Stablecoin Summit Recap"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         </div>
-        <p className="text-center text-blue-300/70 text-sm mt-4">
-          Replace the embed URL in <code>src/components/Gallery.tsx</code> with your final YouTube recap link.
-        </p>
       </div>
     </section>
   );
